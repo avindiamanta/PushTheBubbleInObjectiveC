@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,109 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5be-TX-lYd" customClass="CustomButton">
+                                <rect key="frame" x="50" y="462" width="86" height="80"/>
+                                <state key="normal" title="Red"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sD7-fA-QbS" customClass="CustomButton">
+                                <rect key="frame" x="462" y="462" width="86" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="kSZ-np-sxP"/>
+                                    <constraint firstAttribute="width" constant="86" id="ydb-Xb-NAA"/>
+                                </constraints>
+                                <state key="normal" title="Blue"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOS-aI-01l" customClass="CustomButton">
+                                <rect key="frame" x="257" y="462" width="86" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="MyD-zI-1Ie"/>
+                                    <constraint firstAttribute="width" constant="86" id="dq4-n6-iSq"/>
+                                    <constraint firstAttribute="width" constant="86" id="rbn-SF-B6d"/>
+                                    <constraint firstAttribute="height" constant="80" id="sJ7-nt-1sX"/>
+                                </constraints>
+                                <state key="normal" title="Green"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MyD-zI-1Ie"/>
+                                        <exclude reference="dq4-n6-iSq"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y08-XU-SBJ" customClass="CustomButton">
+                                <rect key="frame" x="244" y="146" width="112" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112" id="0kF-v6-deL"/>
+                                    <constraint firstAttribute="height" constant="106" id="wH0-GY-i7T"/>
+                                </constraints>
+                                <state key="normal" title="Push Me"/>
+                                <connections>
+                                    <action selector="pushMeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hEB-Eq-4t9"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="y08-XU-SBJ" secondAttribute="trailing" constant="224" id="2vn-dS-vgi"/>
+                            <constraint firstItem="sD7-fA-QbS" firstAttribute="leading" secondItem="NOS-aI-01l" secondAttribute="trailing" constant="119" id="4U2-i5-Fyd"/>
+                            <constraint firstItem="NOS-aI-01l" firstAttribute="width" secondItem="5be-TX-lYd" secondAttribute="width" id="5gQ-8S-a0z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sD7-fA-QbS" secondAttribute="trailing" constant="32" id="7fn-Yp-aDo"/>
+                            <constraint firstItem="y08-XU-SBJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="126" id="AVM-bs-K1s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sD7-fA-QbS" secondAttribute="trailing" constant="43" id="Amo-I5-Faq"/>
+                            <constraint firstItem="NOS-aI-01l" firstAttribute="leading" secondItem="y08-XU-SBJ" secondAttribute="trailing" constant="-86" id="CLp-f4-Ita"/>
+                            <constraint firstItem="NOS-aI-01l" firstAttribute="width" secondItem="sD7-fA-QbS" secondAttribute="width" id="HAA-Nz-g54"/>
+                            <constraint firstItem="NOS-aI-01l" firstAttribute="height" secondItem="5be-TX-lYd" secondAttribute="height" id="HEC-WY-DmX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sD7-fA-QbS" secondAttribute="bottom" constant="58" id="Ji1-AU-bnL"/>
+                            <constraint firstItem="y08-XU-SBJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="206" id="K9t-Ij-HiE"/>
+                            <constraint firstItem="sD7-fA-QbS" firstAttribute="leading" secondItem="NOS-aI-01l" secondAttribute="trailing" constant="95" id="Kxe-ZH-TGB"/>
+                            <constraint firstItem="NOS-aI-01l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LiV-0y-HjN"/>
+                            <constraint firstItem="NOS-aI-01l" firstAttribute="height" secondItem="sD7-fA-QbS" secondAttribute="height" id="NP4-O5-Lwt"/>
+                            <constraint firstItem="NOS-aI-01l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VOy-Uz-iwg"/>
+                            <constraint firstItem="NOS-aI-01l" firstAttribute="width" secondItem="5be-TX-lYd" secondAttribute="width" id="Vqp-cP-2gt"/>
+                            <constraint firstItem="y08-XU-SBJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W2T-o8-DdA"/>
+                            <constraint firstItem="5be-TX-lYd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="Wpf-ul-6sb"/>
+                            <constraint firstItem="NOS-aI-01l" firstAttribute="width" secondItem="sD7-fA-QbS" secondAttribute="width" id="XJ8-b7-dev"/>
+                            <constraint firstItem="y08-XU-SBJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ydr-W7-ncP"/>
+                            <constraint firstItem="NOS-aI-01l" firstAttribute="leading" secondItem="5be-TX-lYd" secondAttribute="trailing" constant="113" id="ap4-sA-eH5"/>
+                            <constraint firstItem="5be-TX-lYd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="idm-ER-SGd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5be-TX-lYd" secondAttribute="bottom" constant="58" id="lQd-N3-7P7"/>
+                            <constraint firstItem="NOS-aI-01l" firstAttribute="height" secondItem="5be-TX-lYd" secondAttribute="height" id="pNA-sQ-HNz"/>
+                            <constraint firstItem="NOS-aI-01l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tIw-ji-i6V"/>
+                            <constraint firstItem="NOS-aI-01l" firstAttribute="height" secondItem="sD7-fA-QbS" secondAttribute="height" id="wan-0s-roN"/>
+                            <constraint firstItem="y08-XU-SBJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xO9-zQ-7TZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NOS-aI-01l" secondAttribute="bottom" constant="58" id="ycy-Oh-0bL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2vn-dS-vgi"/>
+                                <exclude reference="K9t-Ij-HiE"/>
+                                <exclude reference="W2T-o8-DdA"/>
+                                <exclude reference="Ydr-W7-ncP"/>
+                                <exclude reference="Wpf-ul-6sb"/>
+                                <exclude reference="CLp-f4-Ita"/>
+                                <exclude reference="LiV-0y-HjN"/>
+                                <exclude reference="VOy-Uz-iwg"/>
+                                <exclude reference="Vqp-cP-2gt"/>
+                                <exclude reference="XJ8-b7-dev"/>
+                                <exclude reference="ap4-sA-eH5"/>
+                                <exclude reference="pNA-sQ-HNz"/>
+                                <exclude reference="wan-0s-roN"/>
+                                <exclude reference="4U2-i5-Fyd"/>
+                                <exclude reference="Amo-I5-Faq"/>
+                                <exclude reference="Kxe-ZH-TGB"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="blueButton" destination="sD7-fA-QbS" id="b1D-lE-kEa"/>
+                        <outlet property="greenButton" destination="NOS-aI-01l" id="9D0-iv-913"/>
+                        <outlet property="redButton" destination="5be-TX-lYd" id="gyB-9f-H3S"/>
+                        <outlet property="redButtonLeadingConstraint" destination="idm-ER-SGd" id="qzi-iw-nq6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="429"/>
         </scene>
     </scenes>
 </document>

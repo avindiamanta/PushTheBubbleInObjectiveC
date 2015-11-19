@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C312E341BFCD16E009C2D52 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C312E331BFCD16E009C2D52 /* CustomButton.m */; };
 		7C9C4E781BFC6913003FCD87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9C4E771BFC6913003FCD87 /* main.m */; };
 		7C9C4E7B1BFC6913003FCD87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9C4E7A1BFC6913003FCD87 /* AppDelegate.m */; };
 		7C9C4E7E1BFC6913003FCD87 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9C4E7D1BFC6913003FCD87 /* ViewController.m */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C312E331BFCD16E009C2D52 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
 		7C9C4E731BFC6913003FCD87 /* PushTheBubbleInObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushTheBubbleInObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C9C4E771BFC6913003FCD87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7C9C4E791BFC6913003FCD87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				7C9C4E7A1BFC6913003FCD87 /* AppDelegate.m */,
 				7C9C4E7C1BFC6913003FCD87 /* ViewController.h */,
 				7C9C4E7D1BFC6913003FCD87 /* ViewController.m */,
+				7C312E331BFCD16E009C2D52 /* CustomButton.m */,
 				7C9C4E7F1BFC6913003FCD87 /* Main.storyboard */,
 				7C9C4E821BFC6914003FCD87 /* Assets.xcassets */,
 				7C9C4E841BFC6914003FCD87 /* LaunchScreen.storyboard */,
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C312E341BFCD16E009C2D52 /* CustomButton.m in Sources */,
 				7C9C4E7E1BFC6913003FCD87 /* ViewController.m in Sources */,
 				7C9C4E7B1BFC6913003FCD87 /* AppDelegate.m in Sources */,
 				7C9C4E781BFC6913003FCD87 /* main.m in Sources */,
@@ -496,6 +500,7 @@
 				7C9C4EA21BFC6914003FCD87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C9C4EA31BFC6914003FCD87 /* Build configuration list for PBXNativeTarget "PushTheBubbleInObjectiveCTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +509,7 @@
 				7C9C4EA51BFC6914003FCD87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C9C4EA61BFC6914003FCD87 /* Build configuration list for PBXNativeTarget "PushTheBubbleInObjectiveCUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +518,7 @@
 				7C9C4EA81BFC6914003FCD87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
