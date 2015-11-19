@@ -132,7 +132,10 @@
                     </view>
                     <connections>
                         <outlet property="blueButton" destination="sD7-fA-QbS" id="b1D-lE-kEa"/>
+                        <outlet property="blueButtonTraillingConstraint" destination="7fn-Yp-aDo" id="2jY-H3-GDc"/>
+                        <outlet property="blueButtonVerticalBottomSpaceConstraint" destination="Ji1-AU-bnL" id="vTA-Y3-6l8"/>
                         <outlet property="greenButton" destination="NOS-aI-01l" id="9D0-iv-913"/>
+                        <outlet property="greenButtonVerticalBottomSpaceConstraint" destination="ycy-Oh-0bL" id="Xcz-7t-bl8"/>
                         <outlet property="redButton" destination="5be-TX-lYd" id="gyB-9f-H3S"/>
                         <outlet property="redButtonLeadingConstraint" destination="idm-ER-SGd" id="qzi-iw-nq6"/>
                     </connections>

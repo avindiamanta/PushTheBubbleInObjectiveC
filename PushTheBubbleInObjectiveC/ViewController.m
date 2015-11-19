@@ -14,11 +14,14 @@
 @property (weak, nonatomic) IBOutlet UIButton *greenButton;
 @property (weak, nonatomic) IBOutlet UIButton *blueButton;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *redButtonLeadingConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *greenButtonVerticalBottomSpaceConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *blueButtonVerticalBottomSpaceConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *blueButtonTraillingConstraint;
 
 @end
 
 @implementation ViewController
-@synthesize redButton, greenButton, blueButton, redButtonLeadingConstraint;
+@synthesize redButton, greenButton, blueButton, redButtonLeadingConstraint, greenButtonVerticalBottomSpaceConstraint, blueButtonVerticalBottomSpaceConstraint, blueButtonTraillingConstraint;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -33,7 +36,11 @@
     [UIView animateWithDuration:2.0 animations:^{
         
         redButton.alpha = 0;
+        greenButton.alpha = 0;
+        blueButton.alpha = 0;
         redButtonLeadingConstraint.constant = -30;
+        greenButtonVerticalBottomSpaceConstraint.constant = -75;
+        blueButtonTraillingConstraint.constant = -32;
         [self.view layoutIfNeeded];
         
     }];
