@@ -11,10 +11,12 @@
 IB_DESIGNABLE
 @interface CustomButton : UIButton
 
+@property (nonatomic, retain) IBInspectable UIColor *fillColor;
+
 @end
 
 @implementation CustomButton : UIButton
-
+@synthesize fillColor;
 - (void)drawRect:(CGRect)rect
 {
     // Create a new rect with some padding
@@ -22,7 +24,7 @@ IB_DESIGNABLE
     CGRect box = CGRectInset(self.bounds, self.bounds.size.width * 0.1f, self.bounds.size.height * 0.1f);
     UIBezierPath *ballBezierPath = [UIBezierPath bezierPathWithOvalInRect:box];
     [[UIColor whiteColor] setStroke];
-    [[UIColor blueColor] setFill]; // Green here to show the black area
+    [fillColor setFill]; // Green here to show the black area
     [ballBezierPath stroke];
     [ballBezierPath fill];
     self.opaque = NO;

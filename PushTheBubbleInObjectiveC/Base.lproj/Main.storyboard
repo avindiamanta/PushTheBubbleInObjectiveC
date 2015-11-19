@@ -21,6 +21,11 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5be-TX-lYd" customClass="CustomButton">
                                 <rect key="frame" x="50" y="462" width="86" height="80"/>
                                 <state key="normal" title="Red"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.82636377689999996" green="0.0" blue="0.023902667200000002" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sD7-fA-QbS" customClass="CustomButton">
                                 <rect key="frame" x="462" y="462" width="86" height="80"/>
@@ -29,6 +34,27 @@
                                     <constraint firstAttribute="width" constant="86" id="ydb-Xb-NAA"/>
                                 </constraints>
                                 <state key="normal" title="Blue"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.1647058874" green="0.1411764771" blue="0.95686280729999995" alpha="1" colorSpace="deviceRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y08-XU-SBJ" customClass="CustomButton">
+                                <rect key="frame" x="244" y="146" width="112" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112" id="0kF-v6-deL"/>
+                                    <constraint firstAttribute="height" constant="106" id="wH0-GY-i7T"/>
+                                </constraints>
+                                <state key="normal" title="Push Me"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.91184423729999997" green="1" blue="0.36578587740000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pushMeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hEB-Eq-4t9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOS-aI-01l" customClass="CustomButton">
                                 <rect key="frame" x="257" y="462" width="86" height="80"/>
@@ -39,23 +65,17 @@
                                     <constraint firstAttribute="height" constant="80" id="sJ7-nt-1sX"/>
                                 </constraints>
                                 <state key="normal" title="Green"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.28933313999999999" green="1" blue="0.28400682399999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="MyD-zI-1Ie"/>
                                         <exclude reference="dq4-n6-iSq"/>
                                     </mask>
                                 </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y08-XU-SBJ" customClass="CustomButton">
-                                <rect key="frame" x="244" y="146" width="112" height="106"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="112" id="0kF-v6-deL"/>
-                                    <constraint firstAttribute="height" constant="106" id="wH0-GY-i7T"/>
-                                </constraints>
-                                <state key="normal" title="Push Me"/>
-                                <connections>
-                                    <action selector="pushMeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hEB-Eq-4t9"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
